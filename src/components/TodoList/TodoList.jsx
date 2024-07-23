@@ -54,7 +54,6 @@ function TodoList() {
           className="form"
           type="text"
           placeholder="Add your new todo"
-          value={value}
         />
         <button onClick={handleSubmit} type="submit" className="button">
           +
