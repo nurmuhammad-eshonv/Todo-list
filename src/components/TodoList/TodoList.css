@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+
+body{
+     background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+  min-height:100vh;
+  font-family: 'Noto Sans', sans-serif;
+}
+body {
+    background: rgb(47, 50, 51);
+    background: linear-gradient(
+      90deg,
+      rgb(110, 107, 103) 26%,
+      rgb(57, 65, 51) 82%
+    );
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensure the body takes the full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .wrapper {
+    width: 400px;
+    height: auto;
+    border: solid rgb(11, 11, 11) 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #060606;
+  }
+  .title{
+    color:rgb(249, 249, 249);
+    text-align: left;
+    font-size:30px;
+    color:rgb(249, 254, 249)
+  }
+  .input-wr{
+    display: flex;
+    gap: 10px;
+    align-items:center
+  }
+  /* .input-wr input {
+
+  } */
+  .form {
+    margin-top: 10px;
+    width: 500px;
+    padding: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    outline:none;
+    background: linear-gradient(to left top, #000, #22132e) fixed;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.8);
+    transition: all 0.5s;
+  }
+  
+  .form:hover {
+    border: 2px solid rgba(255,255,255,0.5);
+  }
+  .form:focus {
+    border: 2px solid rgba(255,255,255,0.5);
+    background: linear-gradient(to left top, #000, #4e2d69) fixed;
+  }
+  
+ .button {
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight:bold;
+    outline:none;
+    background: linear-gradient(to left top, #000, #4e2d69) fixed;
+    border-radius: 10px;
+    border: 5px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.8);
+    transition: all 0.5s;
+  }
+  
+  .button:hover {
+    border: 5px solid rgba(255,255,255,0.5);
+    background: linear-gradient(to left top, #000, #8b5db0) fixed;
+  }
+  
+  .button:focus {
+    background: linear-gradient(to left top, #8b5db0, #000) fixed;
+  }
+  .error{
+    font-size: 16px;
+    color:red
+  }
+  .sum-btn{
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    border:solid blue 2px;
+    background:transparent;
+    text-align: center;
+    color:white;
+    padding-bottom: 25px;
+    cursor: pointer;
+    transition: 0.5s all;
+    }
+    .sum-btn:hover{
+      background: #a2db05;
+      color:black;
+      border:none;
+
+    }
+    .btn-wrapper{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }

@@ -1,0 +1,58 @@
+.list-wr {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .list-wr p {
+    z-index: 4;
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    outline: none;
+    background: linear-gradient(to left top, #000, #22132e) fixed;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+  }
+  
+  .list-wr:hover p {
+    width: 280px;
+    z-index: 1;
+  }
+  
+  .del-btn {
+    transition: 0.9s all;
+    position: absolute;
+    right: -80px; /* Start off-screen */
+    top: 0;
+    z-index: 2;
+    width: 70px;
+    height: 65px;
+    border-radius: 19px;
+    font-size: 38px;
+    background: linear-gradient(to left top, #000, #4e2d69) fixed;
+    color: rgba(255, 255, 255, 0.8);
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    text-align: center;
+    margin-top: -12px;
+    padding-top: 5px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .list-wr:hover .del-btn {
+    right: 0;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
