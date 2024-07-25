@@ -3,7 +3,7 @@ import "./TodoList.css";
 import List from "../list/List";
 
 function TodoList() {
-  const [value, setValue] = useState("fsdfds");
+  const [value, setValue] = useState("");
   const [list, updateList] = useState([]);
   const [error, setError] = useState("");
   const [sum1, set1Sum] = useState(null);
@@ -39,7 +39,6 @@ function TodoList() {
     setValue(e.target.value);
     if (e.target.value.length > 20) {
       setError("Todo item cannot exceed 20 characters.");
-
     } else {
       setError("");
     }
@@ -54,6 +53,7 @@ function TodoList() {
           className="form"
           type="text"
           placeholder="Add your new todo"
+          value={value}
         />
         <button onClick={handleSubmit} type="submit" className="button">
           +
